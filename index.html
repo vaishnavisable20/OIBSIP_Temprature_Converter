@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="app-container">
+        <h2>TempConverter</h2>
+        
+        <div class="form-group">
+            <label for="tempInput">Enter Temperature</label>
+            <div class="input-wrapper">
+                <input type="number" id="tempInput" placeholder="0.00" step="any">
+                
+                <select id="unitSelect">
+                    <option value="C">°C</option>
+                    <option value="F">°F</option>
+                    <option value="K">K</option>
+                </select>
+            </div>
+        </div>
+
+        <button id="convertBtn" type="button">Convert</button>
+
+        <div class="output-box">
+            <span class="output-label">Converted Results</span>
+            <div id="outputDisplay" class="output-placeholder">Specify a value to convert</div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
